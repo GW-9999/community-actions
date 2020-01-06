@@ -1,0 +1,3 @@
+This will replace the normal "a!warn" action, though you'll still have to use "a!warn" for checking warnings, removing warnings and such. (This will get changed in a later update)
+You (for example), can active this command by saying: "warn @GW9999#3196" (I'm using my own name as an example). As when a user reaches the max warning limit you set, they'll automatically be punished and that punishment depends on what you set it to.
+Please do note: The bot sometimes bugs out and allows for users to go past the warning cap, but don't worry, it should fix itself.

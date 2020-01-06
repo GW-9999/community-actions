@@ -1,0 +1,32 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "whitelist",
+    "roles": [
+      "538575256948834314"
+    ],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "keyword",
+    "content": "warn"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{note;Change the two below to set how many warnings a user needs until they get punished and what their punishment is.}\n{set;Max;5}\n{set;Result;{user.mention}}\n{if;{lower;{args;1}};==;warn;{if;{lower;{args;2}};==;remove;{a!warn;remove;{user.id;{args;3}}};{if;{lower;{args}};==;{lower;{args;1}};Please mention a member and reason.;{if;{args;2};!includes;@;Please mention a member and reason.;{a!warn;{user.id;{args;2}};{args;3;infinity}} {set;E11;{channel.awaitmessage; 338222603829510164;60}} {if;{find;{get;E11};[0-9]\\w(?= )};>=;{get;Max};{get;Result}{set;E11}}}}}}",
+      "id": "5e13186d81b1ca00239dd59b"
+    }
+  ],
+  "formatVersion": "1.2"
+}
